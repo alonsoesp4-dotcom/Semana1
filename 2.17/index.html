@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio del Alumno</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Promedio Final</h1>
+
+        <label>Primer examen (25%):</label>
+        <input type="number" id="examen1">
+
+        <label>Segundo examen (25%):</label>
+        <input type="number" id="examen2" >
+
+        <label>Tercer examen (50%):</label>
+        <input type="number" id="examen3">
+
+        <button onclick="calcularPromedio()">
+            Calcular Promedio
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>

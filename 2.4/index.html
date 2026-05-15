@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Estacionamiento</h1>
+
+        <label>Horas utilizadas:</label>
+        <input type="number" id="horas" >
+
+        <label>Costo por hora:</label>
+        <input type="number" id="costo" >
+
+        <button onclick="calcularCobro()">
+            Calcular Cobro
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    /* temática neon comunicación */
+    background:
+    radial-gradient(circle at center,
+    #00ffea,
+    #001219,
+    #000000);
+}
+
+.contenedor{
+
+    width: 450px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,0.6);
+
+    border: 2px solid #00ffea;
+
+    box-shadow:
+    0 0 25px rgba(0,255,234,0.5),
+    0 0 60px rgba(0,255,234,0.2);
+
+    backdrop-filter: blur(15px);
+
+    text-align: center;
+}
+
+h1{
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: #00ffea;
+
+    font-size: 34px;
+
+    margin-bottom: 35px;
+
+    text-shadow: 0 0 15px #00ffea;
+}
+
+label{
+
+    display: block;
+
+    text-align: left;
+
+    color: #a7fffb;
+
+    margin-top: 18px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+input{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 15px;
+
+    border: 2px solid #00ffea;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 16px;
+}
+
+input:focus{
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px #00ffea;
+}
+
+button{
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 30px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #00ffea, #00a6ff);
+
+    color: #001219;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(0,255,234,0.5);
+}
+
+button:hover{
+    transform: translateY(-5px) scale(1.03);
+}
+
+#resultado{
+
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: rgba(0,255,234,0.1);
+
+    border: 2px solid #00ffea;
+
+    color: #a7fffb;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 10px #00ffea;
+}

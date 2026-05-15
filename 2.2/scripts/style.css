@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* temática dinero */
+    background: linear-gradient(-45deg, #052e16, #15803d, #22c55e, #bbf7d0);
+    background-size: 400% 400%;
+    animation: fondo 10s ease infinite;
+}
+
+@keyframes fondo{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.contenedor{
+    width: 440px;
+    padding: 45px;
+    border-radius: 35px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+label{
+    display: block;
+    text-align: left;
+    color: white;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #15803d, #4ade80);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-4px) scale(1.02);
+}
+
+#resultado{
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

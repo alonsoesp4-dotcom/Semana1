@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    /* temática matemática futurista */
+    background:
+    radial-gradient(circle at top,
+    #00f5ff,
+    #001b2e,
+    #000814);
+
+}
+
+.contenedor{
+
+    width: 450px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,0.55);
+
+    border: 2px solid #00f5ff;
+
+    box-shadow:
+    0 0 25px rgba(0,245,255,0.5),
+    0 0 60px rgba(0,245,255,0.2);
+
+    backdrop-filter: blur(15px);
+
+    text-align: center;
+}
+
+h1{
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: #00f5ff;
+
+    font-size: 34px;
+
+    margin-bottom: 35px;
+
+    text-shadow: 0 0 15px #00f5ff;
+}
+
+label{
+
+    display: block;
+
+    text-align: left;
+
+    color: #7df9ff;
+
+    margin-top: 18px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+input{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 15px;
+
+    border: 2px solid #00f5ff;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+input::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+input:focus{
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+button{
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 30px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background:
+    linear-gradient(135deg,
+    #00f5ff,
+    #00bbf9);
+
+    color: #001b2e;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 20px rgba(0,245,255,0.5);
+}
+
+button:hover{
+
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow: 0 0 30px rgba(0,245,255,0.8);
+}
+
+#resultado{
+
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: rgba(0,245,255,0.1);
+
+    border: 2px solid #00f5ff;
+
+    color: #7df9ff;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 10px #00f5ff;
+}

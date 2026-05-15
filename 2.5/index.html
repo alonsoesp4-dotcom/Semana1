@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Brocha Gorda</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>La Brocha Gorda</h1>
+
+        <label>Metros cuadrados (m²):</label>
+        <input type="number" id="metros" >
+
+        <label>Costo por m²:</label>
+        <input type="number" id="costo" >
+
+        <button onclick="calcularPintura()">
+            Generar Presupuesto
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>

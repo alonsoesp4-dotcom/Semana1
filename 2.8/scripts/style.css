@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    /* temática velocidad / movimiento */
+    background:
+    radial-gradient(circle at top,
+    #ff006e,
+    #2d1b69,
+    #000000);
+}
+
+.contenedor{
+
+    width: 450px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,0.55);
+
+    border: 2px solid #ff006e;
+
+    box-shadow:
+    0 0 25px rgba(255,0,110,0.5),
+    0 0 60px rgba(255,0,110,0.2);
+
+    backdrop-filter: blur(15px);
+
+    text-align: center;
+}
+
+h1{
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: #ff006e;
+
+    font-size: 34px;
+
+    margin-bottom: 35px;
+
+    text-shadow: 0 0 15px #ff006e;
+}
+
+label{
+
+    display: block;
+
+    text-align: left;
+
+    color: #ffb3d9;
+
+    margin-top: 18px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+input{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 15px;
+
+    border: 2px solid #ff006e;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 16px;
+}
+
+input:focus{
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 15px #ff006e;
+}
+
+button{
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 30px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #ff006e, #ff5ea8);
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(255,0,110,0.5);
+}
+
+button:hover{
+    transform: translateY(-5px) scale(1.03);
+}
+
+#resultado{
+
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: rgba(255,0,110,0.1);
+
+    border: 2px solid #ff006e;
+
+    color: #ffb3d9;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 10px #ff006e;
+}

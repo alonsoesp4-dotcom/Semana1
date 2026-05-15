@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background: linear-gradient(-45deg, #0f172a, #ea580c, #f97316, #fdba74);
+    background-size: 400% 400%;
+    animation: fondo 12s ease infinite;
+}
+
+@keyframes fondo{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.contenedor{
+    width: 440px;
+    padding: 45px;
+    border-radius: 35px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    color: white;
+    font-size: 34px;
+    margin-bottom: 35px;
+    text-shadow: 0 0 20px rgba(251,146,60,0.8);
+}
+
+label{
+    display: block;
+    text-align: left;
+    color: #ffedd5;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+input:focus{
+    transform: scale(1.03);
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 15px rgba(249,115,22,0.7);
+}
+
+button{
+    width: 100%;
+    padding: 16px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 18px;
+
+    background: linear-gradient(135deg, #ea580c, #fdba74);
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(234,88,12,0.4);
+}
+
+button:hover{
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(234,88,12,0.6);
+}
+
+#resultado{
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}

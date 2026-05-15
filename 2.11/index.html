@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLS - Energía Eléctrica</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>⚡ Pago de Luz - CLS</h1>
+
+        <label>Kilowatts consumidos:</label>
+        <input type="number" id="kw" >
+
+        <label>Costo por kilowatt:</label>
+        <input type="number" id="costo">
+
+        <button onclick="calcularPago()">
+            Calcular Pago
+        </button>
+
+        <h2 id="resultado"></h2>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>

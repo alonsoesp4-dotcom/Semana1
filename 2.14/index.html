@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monto del Cheque</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Monto del Cheque</h1>
+
+        <label>Días de viaje:</label>
+        <input type="number" id="dias" >
+
+        <label>Gasto diario de hotel:</label>
+        <input type="number" id="hotel" >
+
+        <label>Gasto diario de comida:</label>
+        <input type="number" id="comida" >
+
+        <button onclick="calcularCheque()">
+            Calcular Monto
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>

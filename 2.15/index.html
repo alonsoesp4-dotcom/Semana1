@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencia Eléctrica</title>
+
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Potencia Eléctrica</h1>
+
+        <label>Resistencia (R):</label>
+        <input type="number" id="resistencia" >
+
+        <label>Corriente (I):</label>
+        <input type="number" id="corriente" >
+
+        <button onclick="calcularPotencia()">
+            Calcular Potencia
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+</body>
+</html>
